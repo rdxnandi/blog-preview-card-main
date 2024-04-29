@@ -1,0 +1,94 @@
+:root {
+  --Yellow: hsl(47, 88%, 63%);
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 50%);
+  --Black: hsl(0, 0%, 7%);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,500;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,800;1,800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--Yellow);
+  font-family: "Figtree", sans-serif;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  min-height: 100vh;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 370px;
+  transform: scale(1);
+}
+
+.card {
+  border: 1px solid;
+  box-shadow: 8px 8px;
+  background: var(--White);
+  padding: 25px;
+  border-radius: 17px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.text {
+  padding-top: 20px;
+}
+
+.text a {
+  padding: 4px 12px 4px 12px;
+  color: var(--Black);
+  font-weight: 800;
+  text-decoration: none;
+  background: var(--Yellow);
+  border-radius: 5px;
+}
+
+.text .date {
+  margin-top: 20px;
+  margin-bottom: 22px;
+}
+
+.text h2 {
+  margin-bottom: 24px;
+  color: var(--Black);
+}
+
+.text .para {
+  line-height: 1.5;
+  color: var(--Grey);
+  font-weight: 500;
+  margin-bottom: 23px;
+}
+
+.text .avator {
+  display: flex;
+  gap: 9px;
+}
+
+.avator img {
+  width: 10%;
+}
+
+.avator p {
+  margin-top: 8px;
+  color: var(--Black);
+  font-weight: 700;
+}
+
+@media (max-width: 375px) {
+  .container {
+    max-width: 360px;
+  }
+}
